@@ -1,1 +1,1 @@
-var x = 1; while (x <= 12) {console.log(document.evaluate("/html/body/div[2]/main/div[3]/div/div/div/div[2]/div/div/div[" + x + "]/div/div/div/div", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerHTML); x += 1;}
+var x = 1; var button_values = []; while (x <= 12) {var y = document.evaluate("/html/body/div[2]/main/div[3]/div/div/div/div[2]/div/div/div[" + x + "]/div/div/div/div", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerHTML); button_values.push(y); x += 1;} console.log(button_values);
